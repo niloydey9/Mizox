@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Global CSS  */
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #282828;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1200px !important;
+    }
+}
+
+.top-nav{
+    background-color: #1E1729;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.top-nav .top-contact{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    align-items: center;
+    height: 100%;
+}
+.top-nav .top-contact li{
+    margin-right: 10px;
+}
+.top-nav .top-contact i{
+    color: #7748F6;
+    margin-right: 5px;
+}
+.top-nav .top-contact a{
+    color: #ffffffc1;
+    text-decoration: none;
+    font-size: 14px;
+}
+.top-nav .top-menu{
+    list-style: none;
+    display: flex;
+}
+.top-social{
+    list-style: none;
+    display: flex;
+}
+
+
+
+.navbar{
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 0 !important;
+    position: relative;
+}
+.navbar .navbar-nav .nav-link{
+    line-height: 65px;
+}
+.navbar::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #1e1729;
+    width: 215px;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
+}
+.navbar::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #7748F6;
+    width: 218px;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 96% 100%, 0% 100%);
+}
+.navbar .navbar-brand {
+    z-index: 99;
+    position: relative;
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+.navbar .navbar-nav {
+    padding-left: 35px;
+}
+.navbar  .navbar-nav .nav-item .nav-link {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #282828;
+}
+
+
+
+
+.hero-section{
+    
+}
+.hero-section #carouselExampleIndicators img{
+    height: 500px;
+    object-fit: cover;
+}
+.hero-section .carousel-caption{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #282828bf;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
